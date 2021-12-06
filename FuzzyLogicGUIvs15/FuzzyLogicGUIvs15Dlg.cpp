@@ -197,18 +197,11 @@ void CFuzzyLogicGUIvs15Dlg::OnBnClickedButton2()
 	// TODO: Add your control notification handler code here
 	float ux[4][100];
 	float batas[3] = { 25,65 };
-	float Sdev, outSdev = 0;
+	float Sdev;
 
 	for(int x = 0; x <= 100; x++) {
-		if (x >= 25 && x <= 65) {
-			for (int j = 25; j <= 65; j++) {
-				Sdev = pow((x - 40), 2);
-				outSdev = outSdev + Sdev;
-			}
-		}
-		if (x < batas[0])				ux[0][x] = 0;
-		else if (x > batas[1])			ux[0][x] = 0;
-		else							ux[0][x] = exp((-1 / 2) * pow(( (x - 1)),2) / pow(sqrt(outSdev/(x-1)),2));
+
+		ux[0][x] = exp((-0.5*(pow((x - 50),2)))/sqrt(pow((x - 100),2)/99));
 		
 		((CSeries)(m_chartVal.Series(0))).AddXY(x, ux[0][x], NULL, clTeeColor);
 	}
