@@ -1,0 +1,8 @@
+﻿  FuzzyLogicGUIvs15Dlg.cpp
+c:\users\acer\documents\visual studio 2015\projects\fuzzylogicguivs15\fuzzylogicguivs15\fuzzylogicguivs15dlg.cpp(174): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\acer\documents\visual studio 2015\projects\fuzzylogicguivs15\fuzzylogicguivs15\fuzzylogicguivs15dlg.cpp(180): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\acer\documents\visual studio 2015\projects\fuzzylogicguivs15\fuzzylogicguivs15\fuzzylogicguivs15dlg.cpp(184): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\acer\documents\visual studio 2015\projects\fuzzylogicguivs15\fuzzylogicguivs15\fuzzylogicguivs15dlg.cpp(205): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\acer\documents\visual studio 2015\projects\fuzzylogicguivs15\fuzzylogicguivs15\fuzzylogicguivs15dlg.cpp(211): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  FuzzyLogicGUIvs15.vcxproj -> c:\users\acer\documents\visual studio 2015\Projects\FuzzyLogicGUIvs15\Debug\FuzzyLogicGUIvs15.exe
+  FuzzyLogicGUIvs15.vcxproj -> c:\users\acer\documents\visual studio 2015\Projects\FuzzyLogicGUIvs15\Debug\FuzzyLogicGUIvs15.pdb (Partial PDB)
