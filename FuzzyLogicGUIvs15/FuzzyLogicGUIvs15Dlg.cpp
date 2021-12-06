@@ -202,7 +202,15 @@ void CFuzzyLogicGUIvs15Dlg::OnBnClickedButton2()
 	for(int x = 0; x <= 100; x++) {
 
 		ux[0][x] = exp((-0.5*(pow((x - 50),2)))/sqrt(pow((x - 100),2)/99));
+
+		if (x > 50)			ux[1][x] = 0;
+		else				ux[1][x] = 1 - (exp((-0.5*(pow((x - 50), 2))) / sqrt(pow((x - 200), 2) / 99)));
+
+		if (x < 50)			ux[2][x] = 0;
+		else				ux[2][x] = 1 - (exp((-0.5*(pow((x - 50), 2))) / sqrt(pow((x - 200), 2) / 99)));
 		
 		((CSeries)(m_chartVal.Series(0))).AddXY(x, ux[0][x], NULL, clTeeColor);
+		((CSeries)(m_chartVal.Series(1))).AddXY(x, ux[1][x], NULL, clTeeColor);
+		((CSeries)(m_chartVal.Series(2))).AddXY(x, ux[2][x], NULL, clTeeColor);
 	}
 }
